@@ -1,4 +1,5 @@
 <div style="display: flex">
+
 ![](/src/assets/imgs/logo.png)
 </div>
 
@@ -37,21 +38,17 @@
     ├── assets
     ├── common  
     ├── components
-    │   ├── modal
-    |   │    └── ModalFactory.vue 
-    │   ├── BaseButton.vue
+    │   ├── BaseCard.vue
     │   └── BaseInput.vue
     │
     ├── hooks
     ├── interfaces
     │   └── types
-    ├── layouts
+    ├── pages
     ├── router
     ├── services
-    ├── store
-    │   └── modules
-    ├── utils
-    └── views
+    └── store
+        └── modules
 
 ```
 
