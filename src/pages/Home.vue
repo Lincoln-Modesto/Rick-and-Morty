@@ -1,6 +1,6 @@
 <template>
   <div class="container-main">
-    <div class="content">
+    <div class="content-home">
       <div class="header">
         <router-link :to="{ name: 'Home' }">
           <img class="logo" src="../assets/imgs/logo.png" />
@@ -219,4 +219,21 @@ export default defineComponent({
   gap: 50px;
   max-width: 1500px;
 }
+
+@media (max-width: 575.98px) { }
+
+@media (max-width: 600px) {
+
+  .list-characters {
+    gap: 20px
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 991.99px) {
+  
+  .list-characters {
+    gap: 40px
+  }
+}
+
 </style>

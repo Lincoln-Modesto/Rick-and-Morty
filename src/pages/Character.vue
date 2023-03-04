@@ -1,6 +1,6 @@
 <template>
   <div class="container-main">
-    <div class="content">
+    <div class="content-character">
       <div class="header">
         <div class="container-comeback" @click="goback()">
           <img
@@ -55,7 +55,7 @@
               <h6 class="text-white">Location:</h6>
               <span class="value-text ms-3">{{ state.character.location?.name }}</span>
             </div>
-            <div class="content-item mt-5">
+            <div class="content-item mt-5 ep">
               <h6 class="text-white">Episodes:</h6>
               <span class="value-text ms-3">{{ state.episodes }}</span>
             </div>
@@ -122,6 +122,7 @@ export default defineComponent({
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+ 
 }
 
 .container-details {
@@ -218,5 +219,55 @@ export default defineComponent({
 
 .unknown {
   background-color: #444;
+}
+
+@media (max-width: 575.98px) { 
+  .container-main{
+    padding: 10px;
+  }
+}
+
+@media (max-width: 735.98px) {
+  .container-main {
+    background-image: none;
+    background-color: #262c3a;
+    min-height: 800px;
+    
+  }
+
+  .ep{
+    margin-top: 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start;
+  }
+
+  .rounded-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 735.98px) {
+  .container-main {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 750px;
+  }
+
+  .rounded-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 1500px) and (min-width: 1300px){ 
+  .container-main {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 900px;
+  }
 }
 </style>

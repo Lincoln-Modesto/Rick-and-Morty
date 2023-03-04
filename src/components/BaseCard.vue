@@ -81,4 +81,16 @@ span{
 .unknown{
   background-color: #444;
 }
+
+@media (max-width: 600px) {
+  .container-base-card { 
+    height: 200px;
+    width: 160px;
+  }
+
+  .rounded-img { 
+    width: 70px;
+    height: 70px;
+  }
+}
 </style>

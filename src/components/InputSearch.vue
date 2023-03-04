@@ -31,7 +31,7 @@ export default defineComponent({
 <style scoped>
 input {
   padding: 8px 0;
-  width: 350px;
+  max-width: 350px;
 }
 
 img {
@@ -63,5 +63,18 @@ img {
   text-align: center;
   pointer-events: none;
   color: #aaa;
+}
+
+@media (max-width: 420px) {
+  input {
+    width: 160px;
+  }
+}
+
+@media (max-width: 768.97px) and (min-width: 420px) {
+  input {
+    width: 180px;
+    margin-right: 10px;
+  }
 }
 </style>

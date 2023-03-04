@@ -61,4 +61,11 @@ export default defineComponent({
 .disabled{
   cursor: auto !important;
 }
+
+@media (max-width: 600px) {
+
+  .pagination{
+    zoom: 0.7;
+  }
+}
 </style>

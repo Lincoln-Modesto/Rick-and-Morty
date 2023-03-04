@@ -10,13 +10,18 @@
 - O projeto foi construído com o vue create app, utilizando o Vue 3 e sua estrutura Single File Component;
 - Utiliza Typescript para melhor legibilidade e manutenção;
 
+# API
+
+- [API em GraphQL da série Rick and Morty](https://rickandmortyapi.com/documentation/)
+
 ## Features
 
 - [x] Listagem de personagens;
 - [x] Paginação;
 - [x] Página de visualização dos detalhes do personagem;
 - [x] Input de busca de personagens;
-- [x] Estrutura de testes e2e.
+- [x] Responsividade.
+- [ ] Testes e2e.
 
 ## Principais dependências instaladas:
 

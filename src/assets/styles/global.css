@@ -14,14 +14,11 @@ body{
   position: relative;
   height: 100vh;
   overflow: overlay;
+  overflow-x: hidden;
 }
 
 main{
   overflow-y: auto;
-}
-
-h1{
-  color: #fafafa;
 }
 
 svg, img{
@@ -44,9 +41,18 @@ a{
   background: #57BB44;
 }
 
-.content {
+.content-character {
   display: flex;
-  min-width: 1500px;
+  width: 1500px;
+  justify-content: flex-start;
+  padding: 20px 0;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.content-home {
+  display: flex;
+  width: 1500px;
   justify-content: flex-start;
   padding: 20px 0;
   align-items: flex-start;
@@ -58,7 +64,7 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-height: 90px;
+  height: 90px;
   padding: 20px;
   margin-top: 20px;
 }
@@ -76,4 +82,144 @@ a{
   text-shadow:  -1px 0 #22a2bd, 0 1px #22a2bd, 1px 0 #22a2bd, 0 -1px #22a2bd;
   color: #57BB44;
   margin: 20px 0;
+}
+
+@media (max-width: 361px) { 
+  .content-home{
+    width: 350px;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .list-title{
+    font-size: 15px;
+  }
+
+  .logo{
+    width: 120px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 420px) and (min-width: 361px) { 
+  .content-home{
+    width: 400px;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .list-title{
+    font-size: 18px;
+  }
+
+  .logo{
+    width: 120px;
+    height: 40px;
+  }
+} 
+
+@media (max-width: 641.97px) and (min-width: 420px){ 
+
+  .logo{
+    width: 120px;
+    height: 40px;
+  }
+
+  .content-home{
+    width: 450px;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .list-title{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 769.97px) and (min-width: 641.97px) {
+
+  .logo{
+    width: 120px;
+    height: 40px;
+  }
+
+  .content-character {
+    width: 500px;
+    height: 100%;
+    padding: 0;
+  }
+
+  .content-home{
+    width: 600px;
+    height: 100%;
+    padding: 0;
+  }
+
+  .list-title{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991.98px) and (min-width: 769.98px) {
+  .logo{
+    width: 280px;
+    height: 90px;
+  }
+
+  .logo{
+    width: 180px;
+    height: 90px;
+  }
+
+  .content-character {
+    width: 700px;
+  }
+
+  .content-home{
+    width: 700px;
+  }
+}
+
+@media (max-width: 1199.97px) and (min-width: 988.99px){
+
+  .logo{
+    width: 250px;
+    height: 110px;
+  }
+
+  .content-character {
+    width: 900px;
+  }
+
+  .header{
+    height: 80px;
+    margin-top: 0;
+  }
+
+  .rounded-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .content-home{
+    width: 850px;
+  }
+}
+
+@media (max-width: 1300px) and  (min-width: 1199.98px){ 
+  .content-home{
+    width: 900px;
+  }
+}
+
+@media (max-width: 1500px) and (min-width: 1300px){ 
+  .content-character {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1600px) and (min-width: 1300px){ 
+  .content-home{
+    width: 1200px;
+  }
 }
