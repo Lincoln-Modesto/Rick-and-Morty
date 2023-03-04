@@ -20,7 +20,7 @@
 - [x] Paginação;
 - [x] Página de visualização dos detalhes do personagem;
 - [x] Input de busca de personagens;
-- [x] Responsividade.
+- [x] Responsividade;
 - [ ] Testes e2e.
 
 ## Principais dependências instaladas:
@@ -87,6 +87,3 @@ npm run lint
 ## Demo
 
 ![](/src/assets/imgs/example.png)
-
-
-### Lincoln Modesto
